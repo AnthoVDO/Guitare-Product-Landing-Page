@@ -1,0 +1,570 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-padding-top: 60px;
+    }
+    
+    *:not(h1):not(h2):not(h3) {
+        font-family: 'Merriweather', serif;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        color: #b1803f;
+    }
+    
+    .ref {
+        font-size: 80%;
+    }
+    
+    .btn {
+        text-transform: uppercase;
+        background-color: #225d75;
+        cursor: pointer;
+        color: #fff;
+        font-weight: bold;
+        font-size: large;
+        letter-spacing: 0.2em;
+    }
+    
+    body {
+        background-color: #222222;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        max-width: 1028px;
+        margin: auto;
+    }
+    /* container */
+    
+    #container {
+        background-image: url("https://zupimages.net/up/20/30/pz5x.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 0.90;
+        background-position: center;
+    }
+    /* header */
+    
+    #header {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin: 0px;
+        overflow: hidden;
+        max-width: 1028px;
+        margin: auto;
+        z-index: 1;
+        border-bottom: solid 1px #b1803f;
+        background-color: #222222;
+    }
+    
+    #header-img {
+        height: 60px;
+        width: auto;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    
+    #nav-bar {
+        width: 460px;
+        margin-right: 0;
+    }
+    
+    #nav-bar ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #nav-bar ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        width: 60vw;
+        text-align: center;
+        list-style-type: none;
+    }
+    
+    #nav-bar ul li a {
+        vertical-align: middle;
+        width: 100%;
+    }
+    
+    #nav-bar ul li a:hover {
+        background-color: #b1803f;
+    }
+    
+    .nav-link {
+        background-color: #808080;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #CCCCCC;
+        padding: 20% 13%;
+    }
+    /*  main */
+    
+    main {
+        margin: 20px 0;
+        background-color: #333333;
+        opacity: 0.90;
+    }
+    /* title */
+    
+    #title {
+        text-align: center;
+        font-family: 'Marck Script', cursive;
+        padding: 30px 0 30px 0;
+        font-size: 2em;
+        color: #b1803f;
+        margin-top: 70px;
+    }
+    /* About */
+    
+    #about {
+        text-align: justify;
+        padding: 5px;
+        background-color: #3f3f3f;
+        color: #ffffff;
+    }
+    
+    #about p sup a {
+        color: #fff;
+    }
+    /* General */
+    
+    #general {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    #general div p {
+        text-align: justify;
+        padding: 5px;
+        background-color: #3f3f3f;
+        color: #ffffff;
+    }
+    
+    #general div p sup a {
+        color: #fff;
+    }
+    /* video */
+    
+    #video-box {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    /* model */
+    
+    #model {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        height: 850px;
+        justify-content: space-around;
+        margin-top: 60px;
+    }
+    
+    .guitare-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        border: solid 1px;
+        width: 32%;
+        padding: 5px;
+        background-color: #3f3f3f;
+        color: #ffffff;
+    }
+    
+    .guitare-box {
+        height: 100%;
+    }
+    
+    .guitare-box h2 {
+        text-align: justify;
+        font-size: 1em;
+        height: 40px;
+    }
+    
+    .guitare-img {
+        height: 300px;
+        padding: 10px 0;
+        opacity: 1.1;
+    }
+    
+    .guitare-box-list {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70%;
+        text-align: left;
+    }
+    
+    .guitare-box-list ol li {
+        padding: 2px;
+    }
+    
+    .guitare-box-list button {
+        padding: 15px;
+        width: 100%;
+    }
+    
+    .guitare-box h2 sup a {
+        color: #b1803f;
+    }
+    /* contact */
+    
+    #contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        height: 150px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 5px;
+        background-color: #3f3f3f;
+        color: #ffffff;
+    }
+    
+    #contact form {
+        display: flex;
+        flex-direction: row;
+        box-sizing: content-box;
+        align-items: center;
+        align-content: center;
+    }
+    
+    #email {
+        height: 23px;
+        padding: 1px;
+    }
+    
+    #contact form input {
+        box-sizing: content-box;
+    }
+    /* feature */
+    
+    #feature {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        padding-top: 20px;
+    }
+    
+    .feature-content {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .feature-content h2 {
+        font-size: 1em;
+    }
+    
+    #feature div img {
+        width: 100px;
+        height: 100px;
+    }
+    /* more info */
+    
+    #more-info {
+        margin-top: 50px;
+        padding: 5px;
+        background-color: #3f3f3f;
+        color: #ffffff;
+    }
+    
+    #more-info h3 {
+        margin-left: 50px;
+    }
+    
+    .ref li a {
+        color: #ffffff;
+    }
+    /* footer */
+    
+    footer {
+        background-color: #333333;
+        margin-top: 25px;
+    }
+    
+    #footer-menu {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #footer-menu ul li {
+        list-style: none;
+        text-transform: uppercase;
+    }
+    
+    #footer-menu ul li a {
+        color: #b1803f;
+    }
+    
+    #footer-copy {
+        display: flex;
+        flex-direction: column;
+        border-top: solid 1px #ffffff;
+    }
+    
+    #footer-copy h3 {
+        margin-left: 20px;
+        padding: 10px;
+    }
+    
+    #footer-copy ul {
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+    }
+    
+    #footer-copy ul li {
+        list-style: none;
+        padding: 0px 10px 0px 0px;
+        text-decoration: underline;
+        color: #CCCCCC;
+    }
+    
+    @media (max-width: 883px) {
+        .guitare-box-list button {
+            padding: 0px !important;
+        }
+    }
+    
+    @media (max-width: 800px) {
+        #header {
+            height: 50px;
+        }
+        #header-img {
+            height: 50px;
+        }
+        .nav-link {
+            font-size: 0.8em;
+        }
+        .guitare-box h2 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+    
+    @media (max-width: 753px) {
+        #model {
+            flex-wrap: wrap;
+            height: auto;
+        }
+        #guitare-1,
+        #guitare-2 {
+            width: 50%;
+        }
+        #guitare-3 {
+            width: 50%;
+        }
+        #guitare-2 {
+            height: 100%;
+        }
+        #guitare-1 ol {
+            height: 330px;
+        }
+        #guitare-2 ol {
+            height: 330px;
+        }
+        #guitare-3 ol {
+            height: 340px;
+        }
+        #nav-bar {
+            width: 300px;
+        }
+        #nav-bar ul li a {
+            font-size: 0.7em;
+        }
+    }
+    
+    @media (max-width: 671px) {
+        #guitare-3 ol,
+        #guitare-1 ol,
+        #guitare-2 ol {
+            font-size: 16px;
+        }
+        .guitare-box h2,
+        .guitare-box h3 {
+            height: 30px;
+            margin: 10px;
+        }
+        .guitare-img {
+            padding: 0;
+        }
+        .guitare-box-list {
+            line-height: 0.8rem;
+        }
+    }
+    
+    @media (max-width: 610px) {
+        #title {
+            font-size: 1.5em;
+        }
+        #general div img {
+            width: 400px;
+        }
+        #video {
+            width: 400px;
+        }
+        #guitare-1,
+        #guitare-2,
+        #guitare-3 {
+            width: 70%;
+        }
+        .guitare-box {
+            padding: 0;
+        }
+        main {
+            margin: 0;
+        }
+        .guitare-img {
+            height: 200px;
+        }
+        #guitare-1 ol,
+        #guitare-2 ol {
+            height: 300px;
+        }
+        #guitare-3 ol {
+            height: 330px
+        }
+    }
+    
+    @media (max-width: 500px) {
+        #title {
+            font-size: 1em;
+        }
+        #nav-bar {
+            width: 250px;
+        }
+        .nav-link {
+            padding: 0;
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 430px) {
+        #feature div img {
+            width: 70px;
+            height: 70px;
+        }
+        #guitare-3 ol {
+            height: 350px
+        }
+    }
+    
+    @media (max-width: 400px) {
+        #general div img {
+            width: 300px;
+        }
+        #video {
+            width: 300px;
+        }
+        #more-info h3 {
+            margin-left: 0;
+        }
+        #feature div img {
+            width: 50px;
+            height: 50px;
+        }
+        #feature {
+            flex-direction: column;
+        }
+        #contact {
+            padding: 0;
+        }
+        #guitare-3 ol {
+            height: 370px
+        }
+        .btn {
+            letter-spacing: 0;
+        }
+        #contact h2 {
+            font-size: 1.2em;
+        }
+    }
+    
+    @media (max-width: 300px) {
+        html {
+            scroll-padding-top: 67px;
+        }
+        #header {
+            flex-direction: column;
+            height: 65px;
+        }
+        #header-img {
+            height: 40px;
+        }
+        #general div img {
+            width: 200px;
+        }
+        #video {
+            width: 200px;
+            height: auto;
+        }
+        #general div img {
+            width: 200px;
+        }
+        #video {
+            width: 200px;
+        }
+        #more-info h3 {
+            font-size: 1em;
+        }
+        #guitare-1 ol {
+            height: 365px;
+        }
+        #guitare-2 ol {
+            height: 350px;
+        }
+        #guitare-3 ol {
+            height: 450px;
+        }
+        .btn {
+            font-size: 16px;
+        }
+        #video-box h2 {
+            font-size: 1em;
+        }
+        #contact form {
+            flex-direction: column;
+        }
+    }
